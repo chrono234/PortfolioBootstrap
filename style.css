@@ -7,9 +7,11 @@ section{
 }
 
 .hero-imgen-desarrollador{
-  width: 220px;
-  height: 230px;
-  margin: 20px;
+  background: center no-repeat url("images-developers/profile.jpg");
+  background-size: 6rem;
+  height: 6.7rem;
+  margin: 0.6rem;
+  width: 6rem;
 }
 
 h1{
