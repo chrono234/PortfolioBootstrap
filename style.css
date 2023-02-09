@@ -1,17 +1,25 @@
 /** Estilos generales */
 
+:root {
+  --bg-main: #d95d5d;
+  --bs-light: #fff;
+  --bs-light2: #424267;
+  --bg-li-4: #7ade30;
+  --bg-ar: rgb(93 201 255);
+  --bs-dark: #000;
+  --bs-dark2: #2b4684;
+  --bs-dark3: #615151;
+  --col-exp: #8080804d;
+}
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+
 section{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero-imgen-desarrollador{
-  background: center no-repeat url("images-developers/profile.jpg");
-  background-size: 6rem;
-  height: 6.7rem;
-  margin: 0.6rem;
-  width: 6rem;
 }
 
 h1{
@@ -20,13 +28,13 @@ h1{
 }
 
 .seccion-obscura{
-  color: #fff;
-  background-color: #1b1b32;
+  color: var(--bs-light);  /** white*/ 
+  background-color: var(--bs-dark2);
 }
 
 .seccion-clara{
-  color: #000;
-  background-color: #fff;
+  color: var(--bs-dark);
+  background-color: var(--bg-main);
 }
 
 .seccion-titulo{
@@ -37,7 +45,7 @@ h1{
 
 .seccion-descripcion{
   font-size: 1.2rem;
-  color: #584e4e;
+  color: var(--bs-dark);
 }
 
 .section-texto{
@@ -50,16 +58,16 @@ h1{
 }
 
 .texto.negro{
-  color: #000;
+  color: var(--bs-dark);
 }
 
 .texto.blanco{
-  color: #fff;
+  color: var(--bg-main);
 }
 
 .hero-principal h2{
   font-size: 1.5rem;
-  color: #615151; 
+  color: var(--bs-dark); 
 }
 
 /** Sobre mi */
@@ -76,7 +84,7 @@ h1{
 /** Section hero */
 
 .hero{
-  background-color: #f5f6f7;
+  background-color: var(--bg-main);
   min-height: 450px;
   text-align: center;
 }
@@ -85,11 +93,19 @@ h1{
   padding: 3rem;
 }
 
+.hero-imagen-desarrollador{
+  background: center no-repeat url("images/profile.jpg");
+  background-size: 6rem;
+  height: 6.7rem;
+  margin: 0.6rem;
+  width: 6rem;
+}
+
 /** Barra de navegacion */
 
 .navbar{
   padding: 2rem;
-  background-color:#f5f6f7
+  background-color:var(--bg-main);
 }
 
 .navbar-collapse{
@@ -105,7 +121,7 @@ h1{
 
 .experiencia .columna {
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 2px solid var(--col-exp);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,14 +130,14 @@ h1{
 }
 
 .experiencia .columna:hover {
-  color: #fff;
-  background-color: #1b1b32;
+  color: var(--bg-main);
+  background-color: var(--bs-dark2);
 }
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
+  color: var(--bg-li-4);
+  background-color: var(--bs-dark2);
   padding: 8px 19px;
   border-radius: 50%;
 }
@@ -195,18 +211,27 @@ h1{
 }
 
 .overlay i {
-  color: black;
+  color: var(--bs-dark);
   font-size: 25px;
   margin: 10px;
 }
 
 .overlay i:hover{
-    color: darkorchid;
+    color: var(--bs-light);
+}
+
+.project-info{
+  color: var(--bs-light);
 }
 
 /** Articulos */
 
+.card, .list-group-item{
+  background: var(--bg-ar);
+}
+
 .articulos{
+  background: var(--bg-main);
   min-height: 500px;
   padding: 30px;
 }
@@ -285,9 +310,9 @@ h1{
 
 .contacto .rectangulo{
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: var(--bs-light2);
   border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
+  box-shadow: 0px 1px 4px 1px var(--bs-light);
 }
 
 .contacto .row{
@@ -297,15 +322,15 @@ h1{
 }
 
 .contacto .descripcion{
-  color: white;
+  color: var(--bs-light);
   font-size: 1.2rem;
 }
 
 .contacto button{
-  color: white;
+  color: var(--bs-light);
   font-weight: bold;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid var(--bs-light);
   padding: 1.25em 2em;
   margin: 10px;
   border-radius: 100px;
@@ -313,18 +338,18 @@ h1{
 }
 
 .contacto button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
 }
 
 .contacto button i{
-  color: white;
+  color: var(--bs-light);
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
 .contacto button:hover i {
-  color: #000;
+  color: var(--bs-dark);
 }
 
 /** Pie de pagina */
@@ -354,24 +379,24 @@ footer {
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid var(--bg-main);
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales i {
-  color: white;
+  color: var(--bg-main);
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  background-color: var(--bg-main);
+  border: 2px solid var(--bs-light2);
 }
 
 .iconos-redes-sociales a:hover i {
-  color: black;
+  color: var(--bs-dark);
 }
 
 .derechos-de-autor {
@@ -414,3 +439,6 @@ footer {
     max-width: 600px;
   }
 }
+
+
+
