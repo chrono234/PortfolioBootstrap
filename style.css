@@ -81,6 +81,10 @@ h1{
   max-width: 600px;
 }
 
+.curriculum{
+  color: var(--bg-main);
+}
+
 /** Section hero */
 
 .hero{
@@ -111,6 +115,11 @@ h1{
 .navbar-collapse{
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-nav a{
+  display: flex;
+  gap: 0.2rem;
 }
 
 /** Experiencia */
@@ -418,10 +427,10 @@ footer {
 }
 
 @media screen and (max-width: 767px){
-  .navbar-brand{
+  .navbar-brand, .navbar-nav i{
     display: none;
   }
-} 
+}
 
 @media screen and (max-width: 800px){
   .testimonio-imagen{
