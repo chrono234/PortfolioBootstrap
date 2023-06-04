@@ -1,7 +1,8 @@
 ## Portfolio made with Bootstrap, html, CSS Javascript, Typeit
 
 ## Description 📑
-Portfolio of resent projects made with bootstrap
+Portfolio of resent projects made with bootstrap <br>
+## [Portfolio](https://chrono234.github.io/PortfolioBootstrap/)
 
  ![background](https://raw.githubusercontent.com/chrono234/PortfolioBootstrap/main/images/image-readme%201.png)
  
